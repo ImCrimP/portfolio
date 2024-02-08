@@ -10,7 +10,27 @@ a {
   text-decoration: none;
   color: black;
   font-size: 20px;
-  :hover {
+
+  &:hover {
     cursor: pointer;
+  }
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.project-link {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 0.5px solid black;
+  padding: 10px;
+  &:hover {
+    border: 1px solid black;
   }
 }
