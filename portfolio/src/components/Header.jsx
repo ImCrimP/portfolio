@@ -1,14 +1,22 @@
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import "../sass/Header.scss";
 
 export default function Header() {
   return (
     <>
       <div className="header">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
+        <NavLink className="header-tab" activeClassName="active" exact to="/">
+          Home
+        </NavLink>
+        <NavLink className="header-tab" activeClassName="active" to="/about">
+          About
+        </NavLink>
+        <NavLink className="header-tab" activeClassName="active" to="/projects">
+          Projects
+        </NavLink>
+        <NavLink className="header-tab" activeClassName="active" to="/contact">
+          Contact
+        </NavLink>
       </div>
 
       <Outlet />
