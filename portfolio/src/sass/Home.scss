@@ -1,0 +1,30 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 20px;
+  font-size: 20px;
+  #skills-text {
+    height: 100%;
+    border-right: 2px solid lightgray;
+    padding: 12px 20px 12px 0;
+  }
+}
+
+.profile-pic {
+  width: 200px; /* Adjust the width and height as needed */
+
+  object-fit: contain;
+  border: 10px solid #fff; /* Set initial border width and color */
+  border-radius: 50%; /* Ensure the picture is circular */
+  overflow: hidden; /* Hide overflowing animation */
+  position: relative; /* Required for absolute positioning */
+  animation: ripple 2s infinite;
+}
