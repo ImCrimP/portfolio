@@ -7,7 +7,7 @@ import profilePic from "../../assets/profilePic.jpeg";
 import "../../sass/Home.scss";
 export default function Home() {
   return (
-    <div className="home">
+    <div id="home" className="home">
       {" "}
       <h2>Home</h2>
       <img className="profile-pic" src={profilePic} alt="Peter Mountin" />

@@ -1,14 +1,16 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding: 69px;
 }
 .header {
-  background-color: navajowhite;
+  background-color: white;
   padding: 20px;
   display: flex;
   justify-content: flex-end;
   gap: 25px;
   top: 0px;
   position: sticky;
+  z-index: 100;
 }
 
 .active {
@@ -24,4 +26,19 @@ a {
   &:hover {
     cursor: pointer;
   }
+}
+
+.header-tab::after {
+  width: 0;
+  transition: 0.5s;
+  height: 3px;
+  left: 0;
+  bottom: -6px;
+  background-color: black;
+  content: "";
+  display: block;
+}
+
+.header-tab:hover::after {
+  width: 100%;
 }

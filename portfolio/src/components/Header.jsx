@@ -5,16 +5,16 @@ export default function Header() {
   return (
     <>
       <div className="header">
-        <a href="#header" className="header-tab" activeClassName="active">
+        <a href="#home" className="header-tab">
           Home
         </a>
-        <a href="#about" className="header-tab" activeClassName="active">
+        <a href="#about" className="header-tab">
           About
         </a>
-        <a href="#projects" className="header-tab" activeClassName="active">
+        <a href="#projects" className="header-tab">
           Projects
         </a>
-        <a href="#contact" className="header-tab" activeClassName="active">
+        <a href="#contact" className="header-tab">
           Contact
         </a>
       </div>

@@ -12,9 +12,12 @@ export default function Projects() {
       <div className="projects">
         <div className="project-single">
           <img className="project-screenshot" src={weatherSS} alt="" />
-          <div className="project-desc">
-            <h2>Weather App</h2>
-            <p>This is a weather app uses the WeatherAPI and vanilla JS</p>
+          <div className="project-text">
+            <h2 className="project-title">Weather App</h2>
+            <p className="project-desc">
+              This weather application allows the user to get real-time weather
+              data from any location, including hourly and a 2-day forecasts.
+            </p>
             <div className="links">
               <a
                 className="project-code"
@@ -38,7 +41,7 @@ export default function Projects() {
 
         <div className="project-single">
           <img className="project-screenshot" src={cvSS} alt="" />
-          <div className="project-desc">
+          <div className="project-text">
             <h2>CV App</h2>
             <p>React JS</p>
             <div className="links">
@@ -64,7 +67,7 @@ export default function Projects() {
 
         <div className="project-single">
           <img className="project-screenshot" src={memorySS} alt="" />
-          <div className="project-desc">
+          <div className="project-text">
             <h2>Memory Game</h2>
             <p>React JS</p>
             <div className="links">
@@ -90,7 +93,7 @@ export default function Projects() {
 
         <div className="project-single">
           <img className="project-screenshot" src={retailSS} alt="" />
-          <div className="project-desc">
+          <div className="project-text">
             <h2>Shopping Cart Project</h2>
             <p>React JS</p>
             <div className="links">
