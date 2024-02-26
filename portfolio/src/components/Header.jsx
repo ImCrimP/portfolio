@@ -5,21 +5,19 @@ export default function Header() {
   return (
     <>
       <div className="header">
-        <NavLink className="header-tab" activeClassName="active" exact to="/">
+        <a href="#header" className="header-tab" activeClassName="active">
           Home
-        </NavLink>
-        <NavLink className="header-tab" activeClassName="active" to="/about">
+        </a>
+        <a href="#about" className="header-tab" activeClassName="active">
           About
-        </NavLink>
-        <NavLink className="header-tab" activeClassName="active" to="/projects">
+        </a>
+        <a href="#projects" className="header-tab" activeClassName="active">
           Projects
-        </NavLink>
-        <NavLink className="header-tab" activeClassName="active" to="/contact">
+        </a>
+        <a href="#contact" className="header-tab" activeClassName="active">
           Contact
-        </NavLink>
+        </a>
       </div>
-
-      <Outlet />
     </>
   );
 }

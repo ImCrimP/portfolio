@@ -7,7 +7,7 @@ import githubLogo from "../../assets/github.svg";
 import demoLogo from "../../assets/demo.svg";
 export default function Projects() {
   return (
-    <>
+    <div id="projects">
       <h1>Projects</h1>
       <div className="projects">
         <div className="project-single">
@@ -114,6 +114,6 @@ export default function Projects() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
