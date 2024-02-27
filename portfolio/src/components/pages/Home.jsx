@@ -9,11 +9,12 @@ export default function Home() {
   return (
     <div id="home" className="home">
       {" "}
-      <h2>Home</h2>
-      <img className="profile-pic" src={profilePic} alt="Peter Mountin" />
-      <p>
-        Hello! My name is Peter Mountin. I am a front end developer based in
-        Juneau, WI.
+      <div className="profile-pic-container">
+        <img className="profile-pic" src={profilePic} alt="Peter Mountin" />
+      </div>
+      <p className="home-label">Front-End Developer</p>
+      <p className="home-text">
+        Hello! My name is Peter Mountin from Juneau, WI.
       </p>
       <p className="skills">
         <p id="skills-text">Skills</p>

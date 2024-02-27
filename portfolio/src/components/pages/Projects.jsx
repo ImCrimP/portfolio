@@ -8,7 +8,7 @@ import demoLogo from "../../assets/demo.svg";
 export default function Projects() {
   return (
     <div id="projects">
-      <h1>Projects</h1>
+      <h1 className="projects-header">Projects</h1>
       <div className="projects">
         <div className="project-single">
           <img className="project-screenshot" src={weatherSS} alt="" />
