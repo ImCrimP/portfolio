@@ -7,6 +7,7 @@ import About from "./components/pages/About";
 import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
 import "./App.scss";
+import "./sass/Home.scss";
 
 function App() {
   return (
