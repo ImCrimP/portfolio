@@ -9,13 +9,17 @@ export default function Home() {
   return (
     <div id="home" className="home">
       {" "}
-      <div className="profile-pic-container">
-        <img className="profile-pic" src={profilePic} alt="Peter Mountin" />
+      <div className="pic-with-text">
+        <p className="home-text">
+          Hello! My name is Peter Mountin, I am from Juneau, WI.
+        </p>
+        <div className="profile-right">
+          <div className="profile-pic-container">
+            <img className="profile-pic" src={profilePic} alt="Peter Mountin" />
+          </div>
+          <p className="home-label">Front-End Developer</p>
+        </div>
       </div>
-      <p className="home-label">Front-End Developer</p>
-      <p className="home-text">
-        Hello! My name is Peter Mountin from Juneau, WI.
-      </p>
       <p className="skills">
         <p id="skills-text">Skills</p>
         <img src={htmlLogo} alt="HTML" />

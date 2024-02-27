@@ -2,7 +2,27 @@ import linkedInLogo from "../../assets/linkedin.svg";
 import phoneIcon from "../../assets/phoneIcon.svg";
 import email from "../../assets/email.svg";
 import "../../sass/Contact.scss";
+import { useEffect, useState } from "react";
 export default function Contact() {
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbzbbgqyqaV0hgiQG_1zbwa5Ci3hZQnNMjMRRn_GMQsVXey-4bUlZ-mvkhMM-h4nXvhZ/exec";
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    fetch(scriptURL, { method: "POST", body: formData })
+      .then((response) => {
+        if (response.ok) {
+          console.log("Form submitted successfully!");
+          // Reset form fields if submission is successful
+          event.target.reset();
+        } else {
+          console.error("Form submission failed:", response.statusText);
+        }
+      })
+      .catch((error) => console.error("Error!", error.message));
+  }
+
   return (
     <div id="contact">
       <div className="contact-container">
@@ -21,7 +41,7 @@ export default function Contact() {
             </div>
             <p className="contact-text email">
               <img src={email} alt="email" />
-              pjmountin@me.com
+              peter@mountin.us
             </p>
             <p className="contact-text phone">
               <img src={phoneIcon} alt="phone" />
@@ -29,11 +49,15 @@ export default function Contact() {
             </p>
           </div>
           <div className="contact-right">
-            <form className="contact-form">
+            <form
+              name="submit-to-google-sheet"
+              className="contact-form"
+              onSubmit={handleSubmit}
+            >
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
                 type="email"
-                name="email"
+                name="Email"
                 placeholder="Your Email"
                 required
               />
