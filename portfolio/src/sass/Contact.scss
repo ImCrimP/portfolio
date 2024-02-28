@@ -102,3 +102,25 @@ form textarea {
 .linked-txt {
   transform: translateX(-10px);
 }
+
+#submit-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+.submit-success {
+  animation: fadeIn 0.5s;
+
+  font-size: 18px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

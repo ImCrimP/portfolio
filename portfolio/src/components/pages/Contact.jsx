@@ -2,11 +2,12 @@ import linkedInLogo from "../../assets/linkedin.svg";
 import phoneIcon from "../../assets/phoneIcon.svg";
 import email from "../../assets/email.svg";
 import "../../sass/Contact.scss";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 export default function Contact() {
   const scriptURL =
     "https://script.google.com/macros/s/AKfycbzbbgqyqaV0hgiQG_1zbwa5Ci3hZQnNMjMRRn_GMQsVXey-4bUlZ-mvkhMM-h4nXvhZ/exec";
 
+  const [submit, setSubmit] = useState(false);
   function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -16,6 +17,7 @@ export default function Contact() {
           console.log("Form submitted successfully!");
           // Reset form fields if submission is successful
           event.target.reset();
+          setSubmit(true);
         } else {
           console.error("Form submission failed:", response.statusText);
         }
@@ -66,9 +68,14 @@ export default function Contact() {
                 rows="6"
                 placeholder="Your Message"
               ></textarea>
-              <button id="submit" type="submit">
-                Submit
-              </button>
+              <div id="submit-container">
+                <button id="submit" type="submit">
+                  Submit
+                </button>
+                {submit && (
+                  <p className="submit-success">Thank you for reaching out!</p>
+                )}
+              </div>
             </form>
           </div>
         </div>

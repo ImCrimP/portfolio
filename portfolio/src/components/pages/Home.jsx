@@ -11,7 +11,7 @@ export default function Home() {
       {" "}
       <div className="pic-with-text">
         <p className="home-text">
-          Hello! My name is Peter Mountin, I am from Juneau, WI.
+          Hello! My name is Peter Mountin based in Juneau, WI.
         </p>
         <div className="profile-right">
           <div className="profile-pic-container">
