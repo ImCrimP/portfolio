@@ -39,6 +39,10 @@
   gap: 20px;
 }
 */
+p {
+  margin: 0;
+}
+
 #projects {
   margin-top: 15px;
   padding: 50px;
@@ -81,8 +85,8 @@ p.project-desc {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100%;
+  justify-content: space-evenly;
+  height: 95%;
   width: calc(100% - 40px);
   text-align: center;
   position: absolute;
@@ -109,8 +113,8 @@ p.project-desc {
 
 .project-desc {
   text-align: left;
-  width: 75%;
-  font-size: 15px;
+  width: 85%;
+  font-size: 14px;
 }
 
 .links-skills {
@@ -121,13 +125,7 @@ p.project-desc {
   justify-content: space-evenly;
 }
 
-.project-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
+.project-left,
 .project-right {
   display: flex;
   flex-direction: column;
@@ -136,7 +134,7 @@ p.project-desc {
 }
 
 .project-skills {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
 }
 
