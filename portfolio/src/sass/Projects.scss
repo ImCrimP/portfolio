@@ -6,39 +6,7 @@
   justify-content: center;
   font-size: 40px;
 }
-/*
-.projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-}
 
-.project-single:nth-child(odd) {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-evenly;
-
-  padding: 10px;
-
-  gap: 20px;
-}
-.project-single:nth-child(even) {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-start;
-  justify-content: space-evenly;
-
-  padding: 10px;
-
-  gap: 20px;
-}
-*/
 p.links-skills,
 p.project-skills,
 p.project-demo,
@@ -161,5 +129,47 @@ p.project-desc {
   }
   100% {
     top: 0%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .projects {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* Adjust to one column for smaller screens */
+  }
+
+  .project-single {
+    width: 90%; /* Adjust width of each project */
+    margin: 0 auto; /* Center projects */
+  }
+
+  .project-screenshot {
+    border-radius: 12px; /* Reduce border radius for smaller screens */
+  }
+
+  .project-text {
+    width: 100%;
+    padding: 10px; /* Reduce padding */
+    border-radius: 12px; /* Reduce border radius */
+  }
+
+  .project-desc {
+    font-size: 12px; /* Reduce font size for project descriptions */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .projects-header {
+    font-size: 32px; /* Reduce header font size further */
+  }
+
+  .project-title {
+    font-size: 20px; /* Reduce project title font size */
+  }
+
+  .project-desc {
+    font-size: 10px; /* Further reduce font size for project descriptions */
   }
 }

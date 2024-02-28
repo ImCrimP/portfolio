@@ -1,5 +1,5 @@
 #uww {
-  width: 200px;
+  width: 175px;
   border-radius: 35px;
 }
 #about {
@@ -13,4 +13,43 @@
     width: 600px;
     text-align: center;
   }
+}
+.about-header {
+  font-size: 40px;
+}
+
+.about-image-text {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#family {
+  width: 300px;
+}
+.about-text {
+  font-size: 24px;
+}
+
+.education-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.education-header {
+  margin-top: 50px;
+  font-size: 32px;
+}
+.education-txt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.education-text {
+  font-size: 18px;
 }
