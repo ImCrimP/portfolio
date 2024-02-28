@@ -7,9 +7,11 @@ export default function Contact() {
   const scriptURL =
     "https://script.google.com/macros/s/AKfycbzbbgqyqaV0hgiQG_1zbwa5Ci3hZQnNMjMRRn_GMQsVXey-4bUlZ-mvkhMM-h4nXvhZ/exec";
 
+  const [submitting, setSubmitting] = useState(false);
   const [submit, setSubmit] = useState(false);
   function handleSubmit(event) {
     event.preventDefault();
+    setSubmitting(true);
     const formData = new FormData(event.target);
     fetch(scriptURL, { method: "POST", body: formData })
       .then((response) => {
@@ -22,7 +24,8 @@ export default function Contact() {
           console.error("Form submission failed:", response.statusText);
         }
       })
-      .catch((error) => console.error("Error!", error.message));
+      .catch((error) => console.error("Error!", error.message))
+      .finally(() => setSubmitting(false)); // Set submitting state to false when the submission process is completed
   }
 
   return (
@@ -70,8 +73,13 @@ export default function Contact() {
               ></textarea>
               <div id="submit-container">
                 <button id="submit" type="submit">
-                  Submit
+                  {submitting ? (
+                    <div className="loading-spinner"></div>
+                  ) : (
+                    <span>Submit</span>
+                  )}
                 </button>
+
                 {submit && (
                   <p className="submit-success">Thank you for reaching out!</p>
                 )}
