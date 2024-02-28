@@ -27,7 +27,7 @@ export default function Projects() {
                   href="https://github.com/PeterMountin/weather-app"
                   target="_blank"
                 >
-                  <p>GitHub</p>
+                  <p className="project-gh">GitHub</p>
                   <img src={githubLogo} alt="github" />
                 </a>
               </div>
@@ -38,7 +38,7 @@ export default function Projects() {
                   href="https://petermountin-weatherapp.netlify.app/"
                   target="_blank"
                 >
-                  <p>Demo</p>
+                  <p className="project-demo">Demo</p>
                   <img src={demoLogo} alt="demo" />
                 </a>
               </div>
@@ -65,7 +65,7 @@ export default function Projects() {
                   href="https://github.com/PeterMountin/cv-app"
                   target="_blank"
                 >
-                  <p>GitHub</p>
+                  <p className="project-gh">GitHub</p>
                   <img src={githubLogo} alt="github" />
                 </a>
               </div>
@@ -76,7 +76,7 @@ export default function Projects() {
                   href="https://petermountin-cvapp.netlify.app/"
                   target="_blank"
                 >
-                  <p>Demo</p>
+                  <p className="project-demo">Demo</p>
                   <img src={demoLogo} alt="demo" />
                 </a>
               </div>
@@ -105,7 +105,7 @@ export default function Projects() {
                   href="https://github.com/PeterMountin/memory-game"
                   target="_blank"
                 >
-                  <p>GitHub</p>
+                  <p className="project-gh">GitHub</p>
                   <img src={githubLogo} alt="github" />
                 </a>
               </div>
@@ -116,7 +116,7 @@ export default function Projects() {
                   href="https://petermountin-memorygame.netlify.app/"
                   target="_blank"
                 >
-                  <p>Demo</p>
+                  <p className="project-demo">Demo</p>
                   <img src={demoLogo} alt="demo" />
                 </a>
               </div>
@@ -145,7 +145,7 @@ export default function Projects() {
                   href="https://github.com/PeterMountin/retail-junction"
                   target="_blank"
                 >
-                  <p>GitHub</p>
+                  <p className="project-gh">GitHub</p>
                   <img src={githubLogo} alt="github" />
                 </a>
               </div>
@@ -156,7 +156,7 @@ export default function Projects() {
                   href="https://petermountin-retailjunction.netlify.app/"
                   target="_blank"
                 >
-                  <p>Demo</p>
+                  <p className="project-demo">Demo</p>
                   <img src={demoLogo} alt="demo" />
                 </a>
               </div>

@@ -39,7 +39,11 @@
   gap: 20px;
 }
 */
-p {
+p.links-skills,
+p.project-skills,
+p.project-demo,
+p.project-desc,
+p.project-gh {
   margin: 0;
 }
 
