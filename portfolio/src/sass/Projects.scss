@@ -70,7 +70,14 @@
   border-radius: 21px;
 }
 
+h2.project-title,
+p.project-desc {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .project-text {
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,13 +102,14 @@
 
 .project-title {
   text-align: center;
-  font-size: 30px;
+  font-size: 24px;
+  margin: 0;
 }
 
 .project-desc {
   text-align: left;
   width: 75%;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .links-skills {
@@ -110,7 +118,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  gap: 20px;
 }
 
 .project-left {
@@ -128,7 +135,7 @@
 }
 
 .project-skills {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
 }
 
