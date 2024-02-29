@@ -92,6 +92,14 @@
   #home {
     width: 100%;
   }
+
+  .profile-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+  }
+
   .profile-pic-container {
     width: 150px; /* Adjust the width and height as needed */
     height: 150px;
