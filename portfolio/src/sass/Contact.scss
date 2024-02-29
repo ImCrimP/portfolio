@@ -161,3 +161,19 @@ form textarea {
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  #contact {
+    margin-top: 40px;
+  }
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-left,
+  .contact-right {
+    margin: 0;
+    width: 80%;
+  }
+}
