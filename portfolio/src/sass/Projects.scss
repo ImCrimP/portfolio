@@ -16,9 +16,6 @@ p.project-gh {
 }
 
 #projects {
-  margin-top: 15px;
-  padding: 50px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,6 +26,7 @@ p.project-gh {
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
   text-align: center;
+  padding: 20px;
 }
 
 .project-single {
@@ -103,6 +101,7 @@ p.project-desc {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 .project-skills {
@@ -115,12 +114,14 @@ p.project-desc {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  height: 30px;
 }
 
 .project-demo {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 30px;
 }
 
 @keyframes moveUp {
@@ -132,7 +133,7 @@ p.project-desc {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 975px) {
   .projects {
     grid-template-columns: repeat(
       1,
@@ -151,16 +152,16 @@ p.project-desc {
 
   .project-text {
     width: 100%;
-    padding: 10px; /* Reduce padding */
-    border-radius: 12px; /* Reduce border radius */
+    padding: 10px;
+    border-radius: 12px;
   }
 
   .project-desc {
-    font-size: 12px; /* Reduce font size for project descriptions */
+    font-size: 20px; /* Reduce font size for project descriptions */
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .projects-header {
     font-size: 32px; /* Reduce header font size further */
   }

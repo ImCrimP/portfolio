@@ -4,6 +4,16 @@ html {
 }
 .header {
   background-color: rgb(32, 32, 32);
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  top: 0px;
+  position: sticky;
+  z-index: 100;
+}
+
+.header-list {
+  background-color: rgb(32, 32, 32);
   padding: 20px;
   display: flex;
   justify-content: flex-end;
@@ -11,6 +21,7 @@ html {
   top: 0px;
   position: sticky;
   z-index: 100;
+  margin: 0;
 }
 
 .active {
@@ -41,4 +52,60 @@ a {
 
 .header-tab:hover::after {
   width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+.mobile-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile-menu {
+    display: block;
+  }
+  .header-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    background-color: #3864b6;
+    padding: 20px;
+    transition: right 0.8s ease; /* Adjusted transition duration */
+    z-index: 101;
+  }
+
+  .header-list.slide-in {
+    right: 0;
+  }
+
+  .header-list.slide-out {
+    right: -100%;
+  }
+
+  .mobile-menu {
+    display: block;
+    height: 30px;
+    width: 30px;
+
+    top: 10px;
+    right: 10px;
+    z-index: 102;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .menu-icon {
+    padding: 10px;
+  }
+  .hide {
+    visibility: hidden;
+  }
+  .header-tab::after {
+    background-color: rgb(32, 32, 32);
+  }
 }

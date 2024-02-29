@@ -26,6 +26,8 @@
 }
 
 .contact-text {
+  margin-top: 30;
+  margin-bottom: 30;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -35,6 +37,10 @@
   img {
     width: 30px;
     height: 30px;
+  }
+  img.phone {
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -88,15 +94,20 @@ form textarea {
 }
 
 #linkedin-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
-  height: 100%;
+  height: 40px;
   display: flex;
   flex-direction: row;
 
   gap: 10px;
+  z-index: 1;
   img {
     width: 40px;
     height: 40px;
+  }
+  :hover {
   }
 }
 
@@ -106,6 +117,7 @@ form textarea {
 
 .linked-txt {
   transform: translateX(-10px);
+  margin: 0;
 }
 
 #submit-container {

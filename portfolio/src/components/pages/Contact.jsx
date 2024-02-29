@@ -36,6 +36,7 @@ export default function Contact() {
             <h1 className="contact-header">Contact Me</h1>
             <div id="linkedin-container">
               <a
+                id="linkedin-link"
                 className="contact-text"
                 href="https://www.linkedin.com/in/peter-mountin-30a611232/"
                 target="_blank"
@@ -49,7 +50,7 @@ export default function Contact() {
               peter@mountin.us
             </p>
             <p className="contact-text phone">
-              <img src={phoneIcon} alt="phone" />
+              <img className="phone" src={phoneIcon} alt="phone" />
               (920)382-1625
             </p>
           </div>

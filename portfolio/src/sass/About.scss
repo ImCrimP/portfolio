@@ -4,15 +4,12 @@
 }
 #about {
   margin-top: 50px;
+  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  .about-text {
-    width: 600px;
-    text-align: center;
-  }
 }
 .about-header {
   font-size: 40px;
@@ -27,9 +24,12 @@
 }
 #family {
   width: 300px;
+  border-radius: 35px;
 }
 .about-text {
+  width: 600px;
   font-size: 24px;
+  text-align: center;
 }
 
 .education-container {
@@ -52,4 +52,25 @@
 }
 .education-text {
   font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  #about {
+    max-width: 100vw;
+  }
+  .about-image-text {
+    max-width: 80%;
+    flex-direction: column;
+  }
+  .about-text {
+    width: 100%;
+    font-size: 16px;
+  }
+  .education-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .education-text {
+    font-size: 16px;
+  }
 }
