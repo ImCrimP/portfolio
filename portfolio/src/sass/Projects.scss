@@ -109,18 +109,12 @@ p.project-desc {
   font-weight: 600;
 }
 
-.project-code {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  height: 30px;
-}
-
+.project-code,
 .project-demo {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   height: 30px;
 }
 
@@ -159,6 +153,14 @@ p.project-desc {
   .project-desc {
     font-size: 20px; /* Reduce font size for project descriptions */
   }
+  .demo-logo,
+  .gh-logo {
+    width: 20px;
+  }
+  .project-right,
+  .project-left {
+    gap: 5px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -173,6 +175,12 @@ p.project-desc {
   .project-desc {
     font-size: 15px; /* Further reduce font size for project descriptions */
   }
+
+  .project-right,
+  .project-left {
+    gap: 0;
+    margin-top: 2px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -182,5 +190,32 @@ p.project-desc {
 
   .project-desc {
     font-size: 12px; /* Further reduce font size for project descriptions */
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .project-title {
+    font-size: 14px; /* Reduce project title font size */
+  }
+
+  .project-desc {
+    font-size: 9px; /* Further reduce font size for project descriptions */
+  }
+  .demo-logo,
+  .gh-logo {
+    width: 10px;
+  }
+  .demo-logo,
+  .gh-logo {
+    width: 15px;
+  }
+  .project-gh,
+  .project-demo-txt,
+  .project-skills {
+    font-size: 9px;
+  }
+  .project-code,
+  .project-demo {
+    height: 20px;
   }
 }

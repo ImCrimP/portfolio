@@ -28,7 +28,7 @@ export default function Projects() {
                   target="_blank"
                 >
                   <p className="project-gh">GitHub</p>
-                  <img src={githubLogo} alt="github" />
+                  <img className="gh-logo" src={githubLogo} alt="github" />
                 </a>
               </div>
               <div className="project-right">
@@ -38,8 +38,8 @@ export default function Projects() {
                   href="https://petermountin-weatherapp.netlify.app/"
                   target="_blank"
                 >
-                  <p className="project-demo">Demo</p>
-                  <img src={demoLogo} alt="demo" />
+                  <p className="project-demo-txt">Demo</p>
+                  <img className="demo-logo" src={demoLogo} alt="demo" />
                 </a>
               </div>
             </div>
@@ -66,7 +66,7 @@ export default function Projects() {
                   target="_blank"
                 >
                   <p className="project-gh">GitHub</p>
-                  <img src={githubLogo} alt="github" />
+                  <img className="gh-logo" src={githubLogo} alt="github" />
                 </a>
               </div>
               <div className="project-right">
@@ -76,8 +76,8 @@ export default function Projects() {
                   href="https://petermountin-cvapp.netlify.app/"
                   target="_blank"
                 >
-                  <p className="project-demo">Demo</p>
-                  <img src={demoLogo} alt="demo" />
+                  <p className="project-demo-txt">Demo</p>
+                  <img className="demo-logo" src={demoLogo} alt="demo" />
                 </a>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function Projects() {
                   target="_blank"
                 >
                   <p className="project-gh">GitHub</p>
-                  <img src={githubLogo} alt="github" />
+                  <img className="gh-logo" src={githubLogo} alt="github" />
                 </a>
               </div>
               <div className="project-right">
@@ -116,8 +116,8 @@ export default function Projects() {
                   href="https://petermountin-memorygame.netlify.app/"
                   target="_blank"
                 >
-                  <p className="project-demo">Demo</p>
-                  <img src={demoLogo} alt="demo" />
+                  <p className="project-demo-txt">Demo</p>
+                  <img className="demo-logo" src={demoLogo} alt="demo" />
                 </a>
               </div>
             </div>
@@ -146,7 +146,7 @@ export default function Projects() {
                   target="_blank"
                 >
                   <p className="project-gh">GitHub</p>
-                  <img src={githubLogo} alt="github" />
+                  <img className="gh-logo" src={githubLogo} alt="github" />
                 </a>
               </div>
               <div className="project-right">
@@ -156,8 +156,8 @@ export default function Projects() {
                   href="https://petermountin-retailjunction.netlify.app/"
                   target="_blank"
                 >
-                  <p className="project-demo">Demo</p>
-                  <img src={demoLogo} alt="demo" />
+                  <p className="project-demo-txt">Demo</p>
+                  <img className="demo-logo" src={demoLogo} alt="demo" />
                 </a>
               </div>
             </div>
