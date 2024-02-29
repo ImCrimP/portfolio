@@ -171,6 +171,16 @@ p.project-desc {
   }
 
   .project-desc {
-    font-size: 10px; /* Further reduce font size for project descriptions */
+    font-size: 15px; /* Further reduce font size for project descriptions */
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .project-title {
+    font-size: 18px; /* Reduce project title font size */
+  }
+
+  .project-desc {
+    font-size: 12px; /* Further reduce font size for project descriptions */
   }
 }

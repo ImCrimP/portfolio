@@ -107,8 +107,11 @@ form textarea {
     width: 40px;
     height: 40px;
   }
-  :hover {
-  }
+}
+
+#linkedin-link:hover .linked-txt {
+  color: #3864b6; // Change to desired hover text color
+  transition: color 0.3s ease-in-out; // Smooth transition effect
 }
 
 .linked-in {
