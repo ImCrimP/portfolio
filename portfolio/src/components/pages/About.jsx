@@ -19,9 +19,7 @@ export default function About() {
       <div className="education-container">
         <img id="uww" src={uww} alt="UW-Whitewater" />
         <div className="education-txt-container">
-          <span className="education-text">
-            University of Wisconsin - Whitewater, WI
-          </span>
+          <p className="education-text">University of Wisconsin - Whitewater</p>
           <span className="education-text">BBA - General Business</span>
           <span className="education-text">GPA - 3.872</span>
         </div>

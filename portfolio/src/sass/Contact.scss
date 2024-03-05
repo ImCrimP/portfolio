@@ -8,8 +8,9 @@
   align-items: flex-start;
 
   width: 100%;
+  gap: 15px;
   .contact-header {
-    font-size: 50px;
+    font-size: 40px;
     margin: 0;
   }
 }
@@ -22,10 +23,10 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 10px;
-  margin-left: 200px;
+  margin-left: 100px;
 }
 
-.contact-text {
+.contact-text-link {
   margin-top: 30;
   margin-bottom: 30;
   display: flex;
@@ -109,7 +110,9 @@ form textarea {
   }
 }
 
-#linkedin-link:hover .linked-txt {
+#linkedin-link:hover .contact-text,
+#phone-link:hover .contact-text,
+#email-link:hover .contact-text {
   color: #3864b6; // Change to desired hover text color
   transition: color 0.3s ease-in-out; // Smooth transition effect
 }
