@@ -17,7 +17,6 @@ export default function Home() {
           <div className="profile-pic-container">
             <img className="profile-pic" src={profilePic} alt="Peter Mountin" />
           </div>
-          <p className="home-label">Front-End Developer</p>
         </div>
       </div>
       <p className="skills">

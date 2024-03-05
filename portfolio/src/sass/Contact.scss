@@ -92,6 +92,16 @@ form textarea {
   border-radius: 6px;
   border: none;
   margin-top: 10px;
+
+  &:hover {
+    background-color: white;
+    color: #3864b6;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    .loading-spinner {
+      border: 2px solid #3864b6;
+      border-top: 2px solid white;
+    }
+  }
 }
 
 #linkedin-container {
