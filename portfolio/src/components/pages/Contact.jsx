@@ -12,9 +12,14 @@ export default function Contact() {
   const [isHoveredLinkedin, setIsHoveredLinkedin] = useState(false);
   const [isHoveredEmail, setisHoveredEmail] = useState(false);
   const [isHoveredPhone, setisHoveredPhone] = useState(false);
+  const [formDisabled, setFormDisabled] = useState(false);
   function handleSubmit(event) {
     event.preventDefault();
+    if (formDisabled) {
+      return;
+    }
     setSubmitting(true);
+    setFormDisabled(true);
     const formData = new FormData(event.target);
     fetch(scriptURL, { method: "POST", body: formData })
       .then((response) => {
@@ -28,7 +33,10 @@ export default function Contact() {
         }
       })
       .catch((error) => console.error("Error!", error.message))
-      .finally(() => setSubmitting(false)); // Set submitting state to false when the submission process is completed
+      .finally(() => {
+        setSubmitting(false);
+        setFormDisabled(false);
+      });
   }
 
   return (
