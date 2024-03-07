@@ -4,6 +4,8 @@ import cssLogo from "../../assets/css.svg";
 import reactLogo from "../../assets/react.svg";
 import sassLogo from "../../assets/sass.svg";
 import profilePic from "../../assets/profilePic.jpeg";
+import headShot from "../../assets/headShot.png";
+
 import "../../sass/Home.scss";
 export default function Home() {
   return (
@@ -15,7 +17,7 @@ export default function Home() {
         </p>
         <div className="profile-right">
           <div className="profile-pic-container">
-            <img className="profile-pic" src={profilePic} alt="Peter Mountin" />
+            <img className="profile-pic" src={headShot} alt="Peter Mountin" />
           </div>
         </div>
       </div>

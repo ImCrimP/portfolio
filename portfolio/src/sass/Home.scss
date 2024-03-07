@@ -50,20 +50,21 @@
 }
 
 .profile-pic-container {
-  width: 500px; /* Adjust the width and height as needed */
-  height: 500px;
+  width: 338px; /* Adjust the width and height as needed */
+  height: 600px;
   position: relative;
-  border-radius: 50%;
+  border-radius: 100px;
   overflow: hidden;
 }
 
 .profile-pic {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .profile-pic-container::before {
+  overflow: hidden;
   content: "";
   position: absolute;
   top: 0;
@@ -103,10 +104,10 @@
   }
 
   .profile-pic-container {
-    width: 300px; /* Adjust the width and height as needed */
-    height: 300px;
+    width: 225px; /* Adjust the width and height as needed */
+    height: 400px;
     position: relative;
-    border-radius: 50%;
+    border-radius: 50px;
     overflow: hidden;
   }
   .home-text {
@@ -149,10 +150,10 @@
   }
 
   .profile-pic-container {
-    width: 150px; /* Adjust the width and height as needed */
-    height: 150px;
+    width: 113px; /* Adjust the width and height as needed */
+    height: 200px;
     position: relative;
-    border-radius: 50%;
+    border-radius: 25px;
     overflow: hidden;
   }
   .home-text {

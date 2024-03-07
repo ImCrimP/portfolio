@@ -2,12 +2,13 @@ import uww from "../../assets/uww.png";
 import family from "../../assets/family.png";
 import "../../sass/About.scss";
 import harvarx from "../../assets/harvardx.png";
+import picmoji from "../../assets/picmoji.png";
 export default function About() {
   return (
     <div id="about">
       <h1 className="about-header">About Me</h1>
       <div className="about-image-text">
-        <img id="family" src={family} alt="Peter Mountin" />
+        <img id="family" src={picmoji} alt="Peter Mountin" />
         <p className="about-text">
           Motivated, recent college graduate with a long history of customer
           service. Seeking employment in a software development position. Great
