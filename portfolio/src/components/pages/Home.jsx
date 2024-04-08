@@ -13,7 +13,7 @@ export default function Home() {
       {" "}
       <div className="pic-with-text">
         <p className="home-text">
-          Hello! My name is Peter Mountin. I am based in Wisconsin.
+          Hello! My name is Peter Mountin based in Wisconsin.
         </p>
         <div className="profile-right">
           <div className="profile-pic-container">
