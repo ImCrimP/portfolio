@@ -59,8 +59,8 @@ p.project-desc {
   height: 95%;
   width: calc(100% - 40px);
   text-align: center;
-  position: absolute;
   padding: 20px;
+  position: absolute;
   top: 100%;
   transform: translateX(-50%, -50%);
   transition: top 0.5s;
@@ -72,7 +72,7 @@ p.project-desc {
 }
 
 .project-single:hover .project-text {
-  top: 0%; /* Move text to the top when hovered */
+  top: 0%;
 }
 
 .project-title {
@@ -97,6 +97,7 @@ p.project-desc {
 
 .project-left,
 .project-right {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,13 +110,20 @@ p.project-desc {
   font-weight: 600;
 }
 
-.project-code,
-.project-demo {
+.project-code {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   height: 30px;
+}
+
+.project-demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding-left: 10px;
 }
 
 @keyframes moveUp {

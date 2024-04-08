@@ -131,7 +131,7 @@ export default function Projects() {
             <h2 className="project-title">Retail Junction</h2>
             <p className="project-desc">
               This online store gives users a wide variety of products ranging
-              from clothing, jewelery, and even electronics. The user can add
+              from clothing, jewelry, and even electronics. The user can add
               items to their cart with the quantity they want. This online store
               gives a great user experience with an easy to use interface that
               works well on desktop and mobile.
